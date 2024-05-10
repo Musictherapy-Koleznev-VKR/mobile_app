@@ -1,0 +1,98 @@
+export const optionQuestionnaire = {
+  fields: [
+    // {
+    //     label: 'Language',
+    //     value: 'language',
+    //     type: "bool",
+    //     default: '',
+    //     list_value: [{label: 'ру', value: 'ру'}, {label: 'eng', value: 'eng'}],
+    // },
+    {
+      label: 'DateOfBirth',
+      value: 'date_birth',
+      type: 'date',
+      default: '',
+    },
+    {
+      label: 'Gender',
+      value: 'gender',
+      type: 'bool',
+      default: '',
+      list_value: [
+        {label: 'Male', value: 'Мужской'},
+        {label: 'Female', value: 'Женский'},
+        {label: 'Null', value: 'Не указано'},
+      ],
+    },
+    {
+      label: 'CountryOfBirth',
+      value: 'country_birth',
+      type: 'input',
+      default: '',
+    },
+    {
+      label: 'CountryOfResidence',
+      value: 'country_residence',
+      type: 'input',
+      default: '',
+    },
+    {
+      label: 'CurrentCity',
+      value: 'city_residence',
+      type: 'input',
+      default: '',
+    },
+    {
+      label: 'FavoriteMusic?',
+      value: 'music',
+      type: 'box',
+      default: '',
+      list_value: [
+        {label: 'FavoriteMusicCategory1', value: 'Классика'},
+        {label: 'FavoriteMusicCategory2', value: 'Рок'},
+        {label: 'FavoriteMusicCategory3', value: 'Поп'},
+        {label: 'FavoriteMusicCategory4', value: 'Джаз'},
+        {label: 'FavoriteMusicCategory5', value: 'Рэп'},
+        {label: 'FavoriteMusicCategory6', value: 'Фольк'},
+        {label: 'FavoriteMusicCategory7', value: 'Иное'},
+      ],
+    },
+    {
+      label: 'Nature?',
+      value: 'nature',
+      type: 'bool',
+      default: '',
+      list_value: [
+        {label: 'NatureCategory1', value: 'Интраверт'},
+        {label: 'NatureCategory2', value: 'Экстраверт'},
+        {label: 'NatureCategory3', value: 'Не знаю'},
+      ],
+    },
+    {
+      label: 'ClassicLevel',
+      value: 'level',
+      type: 'bool',
+      default: '',
+      list_value: [
+        {label: 'ClassicLevelCategory1', value: '0'},
+        {label: 'ClassicLevelCategory2', value: '1'},
+        {label: 'ClassicLevelCategory3', value: '2'},
+        {label: 'ClassicLevelCategory4', value: '3'},
+        {label: 'ClassicLevelCategory5', value: '4'},
+      ],
+    },
+    {
+      label: 'ActiveLife?',
+      value: 'active_life',
+      type: 'bool',
+      default: '',
+      list_value: [
+        {label: 'ActiveLifeCategory1', value: 'Очень активная'},
+        {label: 'ActiveLifeCategory2', value: 'Активная'},
+        {label: 'ActiveLifeCategory3', value: 'Средняя'},
+        {label: 'ActiveLifeCategory4', value: 'Пассивная'},
+        {label: 'ActiveLifeCategory5', value: 'Очень пассивная'},
+      ],
+    },
+  ],
+};
