@@ -76,7 +76,7 @@ export const CourseItem = ({
           }}
           imageStyle={{borderRadius: 16}}></ImageBackground>
       </View>
-      <Text style={[GlobalStyle.CustomFontRegular, styles.item_desc_text]}>
+      {/* <Text style={[GlobalStyle.CustomFontRegular, styles.item_desc_text]}>
         {item.avalibel
           ? `${checkLanguageConst(
               'XourseActivatedStartDate',
@@ -87,7 +87,7 @@ export const CourseItem = ({
               item.object_date?.end_date,
             )}`
           : checkLanguageConst('CourseActivationInformation', translations)}
-      </Text>
+      </Text> */}
       <View
         style={{
           width: '100%',
@@ -104,9 +104,7 @@ export const CourseItem = ({
               GlobalStyle.CustomFontRegular,
               styles.button_start_test_text,
             ]}>
-            {!item.avalibel
-              ? checkLanguageConst('ActivateCourse', translations)
-              : item.status
+            {item.status
               ? checkLanguageConst('ContinueCourse', translations)
               : checkLanguageConst('StartCourse', translations)}
           </Text>
